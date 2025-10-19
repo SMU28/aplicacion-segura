@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Segura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestión de Productos</h1>
+
+    <section id="auth">
+        <h2>Autenticación</h2>
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button id="registerBtn">Registrar</button>
+        <button id="loginBtn">Iniciar Sesión</button>
+        <button id="logoutBtn" style="display:none;">Cerrar Sesión</button>
+    </section>
+
+    <section id="productos" style="display:none;">
+        <h2>Productos</h2>
+        <input type="text" id="productName" placeholder="Nombre del producto">
+        <input type="number" id="productPrice" placeholder="Precio">
+        <button id="addProductBtn">Agregar Producto</button>
+
+        <ul id="productList"></ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
